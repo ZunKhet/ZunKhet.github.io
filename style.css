@@ -389,3 +389,36 @@ body {
   background: rgba(102, 217, 255, 0.08);
   transform: translateY(-3px);
 }
+.footer {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 50px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.footer p {
+  color: #f5f7ff;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.footer span {
+  display: block;
+  color: #c7cbed;
+  margin-bottom: 12px;
+}
+
+.footer small {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.research-links {
+  margin-top: 15px;
+}
+
+.research-links a {
+  text-decoration: none;
+  color: #66d9ff;
+  font-weight: 700;
+}
