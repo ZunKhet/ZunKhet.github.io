@@ -422,3 +422,18 @@ body {
   color: #66d9ff;
   font-weight: 700;
 }
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.skills-grid span {
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #c7cbed;
+  font-weight: 700;
+}
