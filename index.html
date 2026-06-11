@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zun Khet Wai | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
 
 <body>
@@ -53,7 +54,7 @@
     </header>
 
     <main>
-        <section id="about" class="section">
+        <section id="about" class="section" data-aos="fade-up">
             <p class="section-label">About</p>
             <h2>AI researcher and builder with a curiosity for complex systems.</h2>
             <p>
@@ -63,7 +64,7 @@
             </p>
         </section>
 
-        <section id="projects" class="section">
+        <section id="projects" class="section" data-aos="fade-up">
             <p class="section-label">Projects</p>
             <h2>Featured Work</h2>
 
@@ -108,7 +109,7 @@
             </div>
         </section>
 
-        <section id="research" class="section">
+        <section id="research" class="section" data-aos="fade-up">
             <p class="section-label">Research</p>
             <h2>Research Journey</h2>
 
@@ -156,7 +157,7 @@
             </div>
         </section>
 
-        <section id="writing" class="section">
+        <section id="writing" class="section" data-aos="fade-up">
             <p class="section-label">Writing</p>
             <h2>Making difficult concepts feel intuitive.</h2>
 
@@ -179,7 +180,7 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section" data-aos="fade-up">
             <p class="section-label">Contact</p>
             <h2>Let’s connect.</h2>
 
@@ -193,6 +194,14 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
