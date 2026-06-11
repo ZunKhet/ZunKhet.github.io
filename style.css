@@ -82,14 +82,14 @@ body {
   color: #66d9ff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   font-weight: 700;
   margin-bottom: 18px;
 }
 
 .hero-content h1 {
   max-width: 950px;
-  font-size: clamp(2.5rem, 4.5vw, 4.2rem);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
   line-height: 1.05;
   letter-spacing: -2px;
   margin-bottom: 36px;
