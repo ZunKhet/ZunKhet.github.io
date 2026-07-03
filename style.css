@@ -438,3 +438,31 @@ body {
   color: #c7cbed;
   font-weight: 700;
 }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+.stat-card {
+  padding: 28px;
+  border-radius: 22px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 2.2rem;
+  color: #66d9ff;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stat-card span {
+  color: #c7cbed;
+  font-weight: 700;
+}
