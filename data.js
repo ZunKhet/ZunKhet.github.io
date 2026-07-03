@@ -1,6 +1,6 @@
 const portfolioData = {
   stats: [
-    { label: "Projects", value: "2" },
+    { label: "Projects", value: "3" },
     { label: "Articles", value: "4" },
     { label: "Videos", value: "2" },
     { label: "Paper", value: "1" }
@@ -26,7 +26,17 @@ const portfolioData = {
       image: "assets/paperOrbit.png",
       demo: "https://paper-orbit-zz.streamlit.app/",
       github: "https://github.com/ZunKhet/paper-orbit"
-    }
+    },
+    {
+      title: "Prism256",
+      status: "Released",
+      description:
+        "A tool for inspecting image dataset quality.",
+      tech: "Python · Streamlit · OpenCV · Data Visualization",
+      image: "assets/prism256.png",
+      demo: "https://prism256-zz.streamlit.app/",
+      github: "https://github.com/ZunKhet/Prism256"
+    },
   ],
 
   articles: [
