@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Prism256",
     status: "Released",
-    featured: true,
+    featured: false,
     date: "2026-07-02",
     tags: ["AI", "Computer Vision"],
     description: "A tool for inspecting image dataset quality.",
@@ -46,6 +46,7 @@ const projects = [
     description: "CNN for tropical cyclone presence detection and center localization",
     tech: "Python",
     image: "assets/cyclone_detection_overview.png",
+    demo: "https://github.com/ZunKhet/cyclone-center-detection/blob/main/README.md",
     github: "https://github.com/ZunKhet/cyclone-center-detection"
   }
 ];
