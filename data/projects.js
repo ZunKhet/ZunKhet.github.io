@@ -7,7 +7,7 @@ const projects = [
     tags: ["AI", "Computer Vision"],
     description:
       "An AI-powered fantasy story generator where uploaded images become interactive narrative adventures.",
-    tech: "Python Â· Streamlit Â· Gemini API Â· Clean Architecture",
+    tech: "Python · Streamlit· Gemini API · Clean Architecture",
     image: "assets/echogate.png",
     demo: "https://echogate-ai-zz.streamlit.app/",
     github: "https://github.com/ZunKhet/echogate-ai"
@@ -20,7 +20,7 @@ const projects = [
     tags: ["AI", "Research"],
     description:
       "A research discovery dashboard for exploring AI papers, trends, and research directions.",
-    tech: "Python Â· Streamlit Â· arXiv API Â· Data Visualization",
+    tech: "Python · Streamlit · arXiv API · Data Visualization",
     image: "assets/paperOrbit.png",
     demo: "https://paper-orbit-zz.streamlit.app/",
     github: "https://github.com/ZunKhet/paper-orbit"
@@ -32,9 +32,20 @@ const projects = [
     date: "2026-07-02",
     tags: ["AI", "Computer Vision"],
     description: "A tool for inspecting image dataset quality.",
-    tech: "Python Â· Streamlit Â· OpenCV Â· Data Visualization",
+    tech: "Python · Streamlit · OpenCV · Data Visualization",
     image: "assets/prism256.png",
     demo: "https://prism256-zz.streamlit.app/",
     github: "https://github.com/ZunKhet/Prism256"
+  },
+    {
+    title: "Cyclone Center Detection",
+    status: "Released",
+    featured: true,
+    date: "2026-08-28",
+    tags: ["AI", "Climate Science"],
+    description: "CNN for tropical cyclone presence detection and center localization",
+    tech: "Python",
+    image: "assets/cyclone_detection_overview.png",
+    github: "https://github.com/ZunKhet/cyclone-center-detection"
   }
 ];

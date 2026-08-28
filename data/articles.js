@@ -7,7 +7,7 @@ const articles = [
     tags: ["Statistics", "Machine Learning", "Intuition"],
     description:
       "An intuitive explanation of expectation, variance, and covariance using simple examples before formulas.",
-    tech: "Statistics Â· Machine Learning Â· Intuition",
+    tech: "Statistics · Machine Learning · Intuition",
     link:
       "https://medium.com/@zunkhetwai/why-the-average-never-tells-the-whole-story-6b3e6e918d72?sharedUserId=zunkhetwai"
   },
@@ -19,7 +19,7 @@ const articles = [
     tags: ["Information Theory", "Statistics", "Artificial Intelligence"],
     description:
       "An intuitive explanation of Entropy through surprise, probability, and uncertainty.",
-    tech: "Entropy Â· Information Theory Â· Artificial Intelligence",
+    tech: "Entropy · Information Theory · Artificial Intelligence",
     link:
       "https://medium.com/@zunkhetwai/why-a-coin-toss-contains-more-information-than-a-sunrise-5b124d360e46?sharedUserId=zunkhetwai"
   },
@@ -30,8 +30,8 @@ const articles = [
     date: "2026-06-15",
     tags: ["Statistics", "Data Science", "Research"],
     description:
-      "Understanding Simpsonâ€™s Paradox: Why Combining Data Can Reverse the Truth.",
-    tech: "Statistics Â· Data Science Â· Research",
+      "Understanding Simpson's Paradox: Why Combining Data Can Reverse the Truth.",
+    tech: "Statistics · Data Science · Research",
     link:
       "https://medium.com/@zunkhetwai/the-statistical-paradox-that-tricks-researchers-a04ae5913620?sharedUserId=zunkhetwai"
   },
@@ -43,7 +43,7 @@ const articles = [
     tags: ["Statistics", "Data Science", "Research"],
     description:
       "Explaining what makes a good dataset and why it matters in machine learning.",
-    tech: "Statistics Â· Data Science Â· Research",
+    tech: "Statistics · Data Science · Research",
     link:
       "https://medium.com/@zunkhetwai/what-makes-a-good-dataset-c6558df211bd?sharedUserId=zunkhetwai"
   }
