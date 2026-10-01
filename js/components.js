@@ -1,145 +1,30 @@
-function createCard({
-    image = null,
-    tag,
-    title,
-    description,
-    tech,
-    links = [],
-    cardClass = ""
-}) {
-    return `
-        <article class="card ${cardClass}">
+const arrow = "↗";
 
-            ${image ? `
-                <img src="${image}"
-                     alt="${title}"
-                     class="project-image">
-            ` : ""}
-
-            <div class="project-content">
-
-                <span class="card-tag">${tag}</span>
-
-                <h3>${title}</h3>
-
-                <p>${description}</p>
-
-                ${tech
-                    ? `<p class="tech">${tech}</p>`
-                    : ""}
-
-                <div class="project-links">
-                    ${links.map(link => `
-                        <a href="${link.url}"
-                           target="_blank">
-                            ${link.label}
-                        </a>
-                    `).join("")}
-                </div>
-
-            </div>
-
-        </article>
-    `;
+function sectionHeading(kicker, title, intro = "") {
+  return `<div class="section-head"><p class="kicker">${kicker}</p><h2>${title}</h2>${intro ? `<p class="section-intro">${intro}</p>` : ""}</div>`;
 }
 
-function createProjectCard(project) {
-    return createCard({
-        image: project.image,
-        tag: project.status,
-        title: project.title,
-        description: project.description,
-        tech: project.tech,
-        cardClass: "project-card",
-        links: [
-            {
-                label: "Live Demo",
-                url: project.demo
-            },
-            {
-                label: "GitHub",
-                url: project.github
-            }
-        ]
-    });
+function externalLink(link, className = "text-link") {
+  const external = !link.url.startsWith("mailto:") && !link.url.startsWith("#");
+  return `<a class="${className}" href="${link.url}" ${external ? 'target="_blank" rel="noreferrer"' : ""}>${link.label} <span aria-hidden="true">${arrow}</span></a>`;
 }
 
-function createArticleCard(article) {
-    return createCard({
-        tag: article.status,
-        title: article.title,
-        description: article.description,
-        tech: article.tech,
-        links: [
-            {
-                label: "Read Article",
-                url: article.link
-            }
-        ]
-    });
+function projectCard(project, index) {
+  return `<article class="project-row">
+    <div class="project-copy">
+      <p class="project-number">${String(index + 1).padStart(2, "0")} / ${project.category}</p>
+      <h3>${project.title}</h3>
+      <p>${project.description}</p>
+      <div class="tag-list">${project.tech.map(item => `<span>${item}</span>`).join("")}</div>
+      <div class="inline-links">${project.links.map(link => externalLink(link)).join("")}</div>
+    </div>
+    <div class="project-visual"><img src="${project.image}" alt="${project.title} project preview" loading="lazy"></div>
+  </article>`;
 }
 
-function createStatCard(stat) {
-    return `
-        <div class="stat-card">
-            <strong>${stat.value}</strong>
-            <span>${stat.label}</span>
-        </div>
-    `;
-}
-
-function createVideoCard(video) {
-    return createCard({
-        image: video.thumbnail,
-        tag: video.status,
-        title: video.title,
-        description: video.description,
-        tech: video.tech,
-        cardClass: "project-card",
-        links: [
-            {
-                label: "Watch Video",
-                url: video.link
-            }
-        ]
-    });
-}
-function createFeaturedCard(item) {
-    const image = item.image || item.thumbnail || null;
-
-    const links = [];
-
-    if (item.demo) {
-        links.push({
-            label: "Live Demo",
-            url: item.demo
-        });
-    }
-
-    if (item.github) {
-        links.push({
-            label: "GitHub",
-            url: item.github
-        });
-    }
-
-    if (item.link) {
-        links.push({
-            label:
-                item.status === "YouTube"
-                    ? "Watch Video"
-                    : "Read",
-            url: item.link
-        });
-    }
-
-    return createCard({
-        image,
-        tag: item.status,
-        title: item.title,
-        description: item.description,
-        tech: item.tech,
-        cardClass: image ? "project-card" : "",
-        links
-    });
+function timelineItem(item, type) {
+  const title = type === "education" ? item.degree : item.role;
+  const org = type === "education" ? item.institution : item.organization;
+  const detail = type === "education" && item.detail ? `<p class="timeline-detail">${item.detail}</p>` : "";
+  return `<article class="timeline-row"><p class="timeline-period">${item.period}</p><div><h3>${title}</h3><p class="timeline-org">${org}</p>${detail}</div></article>`;
 }

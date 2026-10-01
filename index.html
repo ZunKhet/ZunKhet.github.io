@@ -1,250 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zun Khet Wai | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Zun Khet Wai — AI / ML engineer and researcher working across computer vision, image processing, and applied machine learning." />
+  <title>Zun Khet Wai — AI / ML Engineer & Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="stars" id="stars"></div>
+  <header class="site-header">
+    <nav class="navbar shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#top" id="wordmark">Zun Khet Wai</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <header class="hero">
-        <nav class="navbar">
-            <div class="logo">Zun Khet Wai</div>
+  <main id="top">
+    <section id="hero" class="hero shell"></section>
+    <section id="research" class="section shell"></section>
+    <section id="projects" class="section shell"></section>
+    <section id="about" class="section shell"></section>
+    <section id="skills" class="section shell"></section>
+    <div class="career-grid shell">
+      <section id="experience" class="section"></section>
+      <section id="education" class="section"></section>
+    </div>
+    <section id="publications" class="section shell"></section>
+  </main>
 
-            <div class="nav-links">
-                <a href="#projects">Work</a>
-                <a href="#writing">Writing</a>
-                <a href="#videos">Videos</a>
-                <a href="#research">Research</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
+  <footer id="contact" class="contact shell"></footer>
 
-        <section class="hero-content">
-            <p class="eyebrow">
-                Exploring
-                <span id="changing-word"></span>
-            </p>
-
-            <h1>
-                I build AI tools, explain complex ideas, and explore intelligence through research.
-            </h1>
-
-            <p class="intro">
-                A portfolio of AI applications, research tools, educational writing, and visual explanations across
-                computer vision, data, and machine learning.
-            </p>
-
-            <div class="identity">
-                Computer Vision · Spatio-Temporal AI · Research Tools
-            </div>
-
-            <div class="hero-buttons">
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn primary">Explore My Work</a>
-                    <a href="#writing" class="btn secondary">Read My Ideas</a>
-                </div>
-        </section>
-    </header>
-
-    <main>
-        <section id="dashboard" class="section" data-aos="fade-up">
-            <div id="stats-container" class="stats-grid"></div>
-        </section>
-        <section id="about" class="section" data-aos="fade-up">
-            <p class="section-label">About</p>
-            <h2>AI researcher and builder with a curiosity for complex systems.</h2>
-            <p>
-                I am interested in artificial intelligence, computer vision, weather
-                intelligence, research software, and tools that help people understand
-                difficult ideas more intuitively.
-            </p>
-        </section>
-
-        <section id="featured" class="section" data-aos="fade-up">
-            <p class="section-label">Featured</p>
-            <h2>Selected work I want visitors to notice first.</h2>
-
-            <div id="featured-container" class="cards"></div>
-        </section>
-
-        <section id="projects" class="section" data-aos="fade-up">
-            <p class="section-label">Projects</p>
-            <h2>Featured Work</h2>
-
-            <div id="projects-container" class="cards"></div>
-        </section>
-
-        <section id="skills" class="section" data-aos="fade-up">
-            <p class="section-label">Skills</p>
-            <h2>Tools and technologies I use.</h2>
-
-            <div class="skills-grid">
-                <span>Python</span>
-                <span>Streamlit</span>
-                <span>Machine Learning</span>
-                <span>Computer Vision</span>
-                <span>Data Visualization</span>
-                <span>Research Engineering</span>
-                <span>Git & GitHub, GitLab</span>
-                <span>Clean Architecture</span>
-            </div>
-        </section>
-
-        <section id="research" class="section" data-aos="fade-up">
-            <p class="section-label">Research</p>
-            <h2>Research Journey</h2>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2022</div>
-
-                    <div class="timeline-content">
-                        <h3>Master's Thesis</h3>
-
-                        <p>
-                            Short-Term Sun Coverage Prediction Using Cloud Movement Pattern
-                            Feature in Photovoltaic Systems
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2024</div>
-
-                    <div class="timeline-content">
-                        <h3>IEEE ECTI-CON 2024
-
-                            Short-Term Sun Coverage Prediction Using
-                            Cloud Movement Pattern Feature in PV Systems</h3>
-
-                        <p>
-                            Presented research on short-term solar coverage prediction
-                            using sky image analysis and cloud movement patterns.
-                        </p>
-                        <div class="research-links">
-                            <a href="https://doi.org/10.1109/ECTI-CON60892.2024.10595027" target="_blank">Paper</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="writing" class="section" data-aos="fade-up">
-            <p class="section-label">Writing</p>
-            <h2>Making difficult concepts feel intuitive.</h2>
-
-            <div id="articles-container" class="cards"></div>
-        </section>
-        <section id="videos" class="section" data-aos="fade-up">
-            <p class="section-label">Videos</p>
-            <h2>Visual explanations on AI, statistics, and research ideas.</h2>
-
-            <div id="videos-container" class="cards"></div>
-        </section>
-        <section id="journey" class="section" data-aos="fade-up">
-            <p class="section-label">Journey</p>
-            <h2>Education and Experience</h2>
-
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2026</div>
-                    <div class="timeline-content">
-                        <h3>Learner and Researcher</h3>
-                        <p>
-                            Building AI applications and educational tools.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2024–2026</div>
-                    <div class="timeline-content">
-                        <h3>Algorithm Engineer</h3>
-                        <p>
-                            machine learning, image processing, and algorithm development.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2022-2024</div>
-                    <div class="timeline-content">
-                        <h3>Master of Engineering (AI & IoT)</h3>
-                        <p>
-                            Kasetsart University, Thailand
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2019-2020</div>
-                    <div class="timeline-content">
-                        <h3>Junior Software Developer</h3>
-                        <p>
-                            Web application development using Angular, Django, and Java Spring.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2012-2018</div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Engineering (Computer Engineering and Information Technology)</h3>
-                        <p>
-                            Mandalay Technological University, Myanmar
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section id="contact" class="section" data-aos="fade-up">
-            <p class="section-label">Contact</p>
-            <h2>Let’s connect.</h2>
-
-            <div class="contact-links">
-                <a href="mailto:zunkhetwai@gmail.com">Email</a>
-                <a href="https://github.com/ZunKhet" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/zun-khet-wai/" target="_blank">LinkedIn</a>
-                <a href="https://medium.com/@zunkhetwai" target="_blank">Medium</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>Zun Khet Wai</p>
-        <span>Exploring intelligence, patterns, and the universe through AI.</span>
-        <small>© 2026</small>
-    </footer>
-
-    <script src="js/components.js"></script>
-    <script src="data/stats.js"></script>
-    <script src="data/projects.js"></script>
-    <script src="data/articles.js"></script>
-    <script src="data/videos.js"></script>
-    <script src="data.js"></script>
-    <script src="js/render.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true
-        });
-    </script>
+  <script src="data/profile.js"></script>
+  <script src="data/research.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/background.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/experience.js"></script>
+  <script src="data/education.js"></script>
+  <script src="data/publications.js"></script>
+  <script src="data/links.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>

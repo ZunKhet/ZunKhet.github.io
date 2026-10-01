@@ -1,8 +1,9 @@
-createStars();
-startHeroAnimation();
-
-renderStats();
-renderFeatured();
+renderHero();
+renderResearch();
 renderProjects();
-renderArticles();
-renderVideos();
+renderBackground();
+renderSkills();
+renderExperience();
+renderEducation();
+renderPublications();
+renderContact();
